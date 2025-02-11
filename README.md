@@ -65,14 +65,14 @@ WHERE
 
 The following SQL queries were developed to answer specific business questions:
 
-### 4. Write a SQL query to retrieve all columns for sales made on '2022-11-05**:
+### 1. Write a SQL query to retrieve all columns for sales made on '2022-11-05:
 ```sql
 SELECT *
 FROM retail_sales
 WHERE sale_date = '2022-11-05';
 ```
 
- ### 5. Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022**:
+ 2.**Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022**:
 ```sql
 SELECT 
   *
@@ -85,7 +85,7 @@ WHERE
     quantity >= 4
 ```
 
-3. **Write a SQL query to calculate the total sales (total_sale) for each category.**:
+3.**Write a SQL query to calculate the total sales (total_sale) for each category.**:
 ```sql
 SELECT 
     category,
@@ -103,13 +103,13 @@ FROM retail_sales
 WHERE category = 'Beauty'
 ```
 
-5. **Write a SQL query to find all transactions where the total_sale is greater than 1000.**:
+5.**Write a SQL query to find all transactions where the total_sale is greater than 1000.**:
 ```sql
 SELECT * FROM retail_sales
 WHERE total_sale > 1000
 ```
 
-6. **Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.**:
+6.**Write a SQL query to find the total number of transactions (transaction_id) made by each gender in each category.**:
 ```sql
 SELECT 
     category,
@@ -142,7 +142,7 @@ GROUP BY 1, 2
 WHERE rank = 1
 ```
 
-8. **Write a SQL query to find the top 5 customers based on the highest total sales **:
+8. **Write a SQL query to find the top 5 customers based on the highest total sales**:
 ```sql
 SELECT 
     customer_id,
